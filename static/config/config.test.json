@@ -1,0 +1,10 @@
+[{
+  "rootUrl": "http://172.16.110.40:8081/xsjkjhapi",
+  "imgUrl": "http://172.16.110.40:8081/xsjkjhapi",
+  "htmlUrl": "http://172.16.110.40:8081/htmldata"
+},
+{
+  "rootUrl": "http://www.hzcdc.com.cn:8081/xsjkjhapi",
+  "imgUrl": "http://www.hzcdc.com.cn:8081/xsjkjhapi",
+  "htmlUrl": "http://www.hzcdc.com.cn:8081/htmldata"
+}]

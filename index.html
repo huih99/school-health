@@ -1,0 +1,47 @@
+<script>
+  (function () {
+    var width = 375,
+      pw = parseInt(window.screen.width),
+      scale = pw / width,
+      ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)) {
+      var version = parseFloat(RegExp.$1);
+      if (version > 2.3) {
+        document.write('<meta name="viewport" content="width=' + width + ',minimum-scale=' + scale +
+          ',maximum-scale=' + scale + ',target-densitydpi=device-dpi" />');
+      } else {
+        document.write('<meta name="viewport" content="width=' + width + ',target-densitydpi=device-dpi" />');
+      }
+    } else {
+      document.write('<meta name="viewport" content="width=' + width +
+        ',user-scalable=no,target-densitydpi=device-dpi" />');
+    }
+  })();
+
+</script>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>校园症状监测系统</title>
+  <!-- <script src="./static/js/vendor.dll.js"></script> -->
+</head>
+<style>
+  html,
+  body {
+    padding: 0;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+  }
+
+</style>
+
+<body>
+  <div id="app">
+  </div>
+</body>
+<!-- plus js -->
+
+</html>
